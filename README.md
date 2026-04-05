@@ -55,7 +55,7 @@ Speech samples are resampled to 22,050 Hz to match the sampling setup used by th
 Clone the repository:
 
 ```bash
-git clone <repository-url>
+https://github.com/aman06012003/IT_Project.git
 cd IT_Project
 ```
 
