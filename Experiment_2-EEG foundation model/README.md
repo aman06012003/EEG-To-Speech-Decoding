@@ -10,7 +10,7 @@ The training pipeline is built from three main components:
    - Defined in `EEGModule.py`.
    - Encodes EEG into a latent sequence `mid_output`.
    - Supports two EEG backbones:
-     - A CNN + optional S4 stack.
+     - A CNN + optional S4 (Structured State Space Sequence) stack.
      - A LaBraM backbone (`use_labram: true` in the config).
    - Includes an EEG reconstruction branch used as an auxiliary loss.
    - Includes a subject discriminator for subject-invariant latent learning.
