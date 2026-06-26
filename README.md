@@ -119,8 +119,8 @@ For this project we thank the authors of [1,2] to create an intial baseline for 
 
 ## References
 
-[1]. Lee, Jihwan, et al. "Toward fully-end-to-end listened speech decoding from EEG signals." arXiv preprint arXiv:2406.08644, 2024.
-[2]. Lee, Jihwan, et al. "Enhancing listened speech decoding from EEG via parallel phoneme sequence prediction." ICASSP 2025 IEEE International Conference on Acoustics, Speech and Signal Processing, 2025.
-[3]. Toffolo, Kathryn K., Edward G. Freedman, and John J. Foxe. "Evoking the N400 event-related potential (ERP) component using a publicly available novel set of sentences with semantically incongruent or congruent endings." Neuroscience 501, 2022, pp. 143-158.
+[1]. Lee, Jihwan, et al. "Toward fully-end-to-end listened speech decoding from EEG signals." arXiv preprint arXiv:2406.08644, 2024./n
+[2]. Lee, Jihwan, et al. "Enhancing listened speech decoding from EEG via parallel phoneme sequence prediction." ICASSP 2025 IEEE International Conference on Acoustics, Speech and Signal Processing, 2025./n
+[3]. Toffolo, Kathryn K., Edward G. Freedman, and John J. Foxe. "Evoking the N400 event-related potential (ERP) component using a publicly available novel set of sentences with semantically incongruent or congruent endings." Neuroscience 501, 2022, pp. 143-158./n
 
 
