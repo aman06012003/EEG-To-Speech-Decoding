@@ -11,7 +11,8 @@ The model is composed of three main parts:
 1. `EEGModule` in [EEGModule.py](EEGModule.py)
    - Encodes the EEG input with convolutional blocks.
    - Applies an additional temporal downsampling stage.
-   - Optionally uses an S4 sequence model to produce the latent EEG representation `mid_output`.
+   - Optionally uses S4 (Structured State Space
+Sequence) layers to produce the latent EEG representation `mid_output`.
    - Reconstructs the EEG signal through a decoder branch for an auxiliary reconstruction loss.
    - Includes a `subject_discriminator` on the EEG latent representation. It uses gradient reversal, so the encoder is encouraged to learn subject-invariant features.
 
