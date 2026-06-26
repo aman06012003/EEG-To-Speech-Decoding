@@ -21,8 +21,8 @@ Each experiment folder has its own README with training and inference details.
 
 Useful entry points:
 
-- [`Experiment_1/README.md`](Experiment_1/README.md)
-- [`Experiment_2/README.md`](Experiment_2/README.md)
+- [`Experiment_1-/README.md`](Experiment_1-Subject_Discriminator/README.md)
+- [`Experiment_2/README.md`](Experiment_2-EEG_Foundation_Model/README.md)
 - [`Source Code/icassp25-fesde-phoneme/README.md`](Source%20Code/icassp25-fesde-phoneme/README.md)
 
 ## Dataset
@@ -99,7 +99,7 @@ Optional Weights & Biases logging:
 python train.py -c configs/configs.json -m <run_name> -w y
 ```
 
-## Instructions to start-:
+## Instructions to start
 
 If you are new to the repository, this is the fastest path:
 
@@ -108,7 +108,7 @@ If you are new to the repository, this is the fastest path:
 3. Install the dependencies from that folder's `requirements.txt`.
 4. Run `train.py` with a new run name.
 
-For code reference-:
+For code reference -:
 
 - `train.py` is the main training entry point in each experiment folder.
 - `inference.py` is used to synthesize outputs from saved checkpoints.
