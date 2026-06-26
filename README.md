@@ -1,6 +1,6 @@
 # Master's Project: EEG-to-Listened-Speech Decoding
 
-This repository contains a master's project on decoding listened speech from EEG signals. It uses the ICASSP 2025 FESDE-phoneme implementation as a reference baseline and adds two experiment tracks that extend the original pipeline.
+This repository contains a master's project on decoding listened speech from EEG signals. It uses the  FESDE (Fully-End-to-end Speech Decoding from EEG) phoneme implementation as a reference baseline and adds two experiment tracks that extend the original pipeline.
 
 ## Project Overview
 
@@ -15,7 +15,7 @@ Each experiment folder has its own README with training and inference details.
 
 | Path | Purpose |
 | --- | --- |
-| `Source Code/icassp25-fesde-phoneme/` | Original reference implementation based on the ICASSP 2025 FESDE-phoneme project. |
+| `Source Code/icassp25-fesde-phoneme/` | Original reference implementation based on the FESDE-phoneme project. |
 | `Experiment_1/` | First modified experiment built on the reference code. |
 | `Experiment_2/` | Second experiment with LaBraM integration and additional utilities. |
 
@@ -28,7 +28,7 @@ Useful entry points:
 ## Dataset
 
 The experiments use the N400 dataset.
-
+Data Link: https://datadryad.org/dataset/doi:10.5061/dryad.6wwpzgmx4
 - 21 subjects are included.
 - Each subject listened to 440 non-prosodic audio stimuli.
 - EEG signals were recorded while subjects listened to the audio.
@@ -99,7 +99,7 @@ Optional Weights & Biases logging:
 python train.py -c configs/configs.json -m <run_name> -w y
 ```
 
-## Where to Start Reading
+## Instructions to start-:
 
 If you are new to the repository, this is the fastest path:
 
@@ -108,14 +108,19 @@ If you are new to the repository, this is the fastest path:
 3. Install the dependencies from that folder's `requirements.txt`.
 4. Run `train.py` with a new run name.
 
-For code reference:
+For code reference-:
 
 - `train.py` is the main training entry point in each experiment folder.
 - `inference.py` is used to synthesize outputs from saved checkpoints.
 - `tutorial_architecture_walkthrough.ipynb` helps inspect model behavior on a single EEG sample.
 
+# Acknowledgement
+For this project we thank the authors of [1,2] to create an intial baseline for decoding speech from raw EEG. We also want to thank the authors of [3] for providing the dataset of participants.
+
 ## References
 
-1. Lee, Jihwan, et al. "Toward fully-end-to-end listened speech decoding from EEG signals." arXiv preprint arXiv:2406.08644, 2024.
-2. Lee, Jihwan, et al. "Enhancing listened speech decoding from EEG via parallel phoneme sequence prediction." ICASSP 2025 IEEE International Conference on Acoustics, Speech and Signal Processing, 2025.
-3. Toffolo, Kathryn K., Edward G. Freedman, and John J. Foxe. "Evoking the N400 event-related potential (ERP) component using a publicly available novel set of sentences with semantically incongruent or congruent endings." Neuroscience 501, 2022, pp. 143-158.
+[1]. Lee, Jihwan, et al. "Toward fully-end-to-end listened speech decoding from EEG signals." arXiv preprint arXiv:2406.08644, 2024.
+[2]. Lee, Jihwan, et al. "Enhancing listened speech decoding from EEG via parallel phoneme sequence prediction." ICASSP 2025 IEEE International Conference on Acoustics, Speech and Signal Processing, 2025.
+[3]. Toffolo, Kathryn K., Edward G. Freedman, and John J. Foxe. "Evoking the N400 event-related potential (ERP) component using a publicly available novel set of sentences with semantically incongruent or congruent endings." Neuroscience 501, 2022, pp. 143-158.
+
+
